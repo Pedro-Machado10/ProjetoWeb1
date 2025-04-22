@@ -1,0 +1,45 @@
+/*Configurações Totais*/
+
+* { 
+    margin: 0;
+    padding: 0 ; 
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: black;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } 
+  .card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .principal-hover {
+    transition: transform 0.4s ease;
+  }
+  .principal-hover:hover {
+    transform: scale(1.01);
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .gallery img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+
+  
