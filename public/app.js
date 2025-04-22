@@ -46,7 +46,56 @@ const filmes = [
       "https://picsum.photos/id/256/200/300",
       "https://picsum.photos/id/257/200/300"
     ]
+  },
+  {
+    id: 5,
+    titulo: "O Código da Vida",
+    imagem: "https://picsum.photos/id/1052/204/300",
+    descricao: "Drama sobre ética e biotecnologia.",
+    sinopseLonga: "Um cientista descobre uma fórmula capaz de alterar o DNA humano, desencadeando dilemas morais profundos.",
+    imagemDestaque: "https://picsum.photos/id/1052/1000/400",
+    imagensExtras: [
+      "https://picsum.photos/id/258/200/300",
+      "https://picsum.photos/id/259/200/300"
+    ]
+  },
+  {
+    id: 6,
+    titulo: "Viagem no Tempo",
+    imagem: "https://picsum.photos/id/1062/204/300",
+    descricao: "Um thriller sobre paradoxos temporais.",
+    sinopseLonga: "Um físico encontra um portal temporal e precisa impedir uma catástrofe que ele mesmo causou no futuro.",
+    imagemDestaque: "https://picsum.photos/id/1062/1000/400",
+    imagensExtras: [
+      "https://picsum.photos/id/260/200/300",
+      "https://picsum.photos/id/261/200/300"
+    ]
+  },
+  {
+    id: 7,
+    titulo: "Notas de Liberdade",
+    imagem: "https://picsum.photos/id/1072/204/300",
+    descricao: "Música e superação em um só filme.",
+    sinopseLonga: "Uma jovem pianista luta contra traumas do passado para vencer uma competição internacional.",
+    imagemDestaque: "https://picsum.photos/id/1072/1000/400",
+    imagensExtras: [
+      "https://picsum.photos/id/262/200/300",
+      "https://picsum.photos/id/263/200/300"
+    ]
+  },
+  {
+    id: 8,
+    titulo: "Robôs e Rebeldes",
+    imagem: "https://picsum.photos/id/1082/204/300",
+    descricao: "Revolução cibernética em um mundo distópico.",
+    sinopseLonga: "Em um futuro onde robôs dominam a sociedade, um grupo de humanos resiste para recuperar a liberdade.",
+    imagemDestaque: "https://picsum.photos/id/1082/1000/400",
+    imagensExtras: [
+      "https://picsum.photos/id/264/200/300",
+      "https://picsum.photos/id/265/200/300"
+    ]
   }
+  
 ];
 
 // ✅ Definindo o filme de destaque (último da lista)
