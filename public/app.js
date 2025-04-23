@@ -8,7 +8,8 @@ const filmes = [
     imagemDestaque: "https://picsum.photos/id/121/1000/400",
     imagensExtras: [
       "https://picsum.photos/id/250/200/300",
-      "https://picsum.photos/id/251/200/300"
+      "https://picsum.photos/id/251/200/300",
+      
     ]
   },
   {
@@ -73,10 +74,10 @@ const filmes = [
   },
   {
     id: 7,
-    titulo: "Notas de Liberdade",
+    titulo: "Robôs e Rebeldes", 
     imagem: "https://picsum.photos/id/1072/204/300",
-    descricao: "Música e superação em um só filme.",
-    sinopseLonga: "Uma jovem pianista luta contra traumas do passado para vencer uma competição internacional.",
+    descricao: "Revolução cibernética em um mundo distópico.",
+    sinopseLonga: "Em um futuro onde robôs dominam a sociedade, um grupo de humanos resiste para recuperar a liberdade.",
     imagemDestaque: "https://picsum.photos/id/1072/1000/400",
     imagensExtras: [
       "https://picsum.photos/id/262/200/300",
@@ -85,10 +86,10 @@ const filmes = [
   },
   {
     id: 8,
-    titulo: "Robôs e Rebeldes",
+    titulo: "Notas de Liberdade",
     imagem: "https://picsum.photos/id/1082/204/300",
-    descricao: "Revolução cibernética em um mundo distópico.",
-    sinopseLonga: "Em um futuro onde robôs dominam a sociedade, um grupo de humanos resiste para recuperar a liberdade.",
+    descricao: "Música e superação em um só filme.",
+    sinopseLonga: "Uma jovem pianista luta contra traumas do passado para vencer uma competição internacional.",
     imagemDestaque: "https://picsum.photos/id/1082/1000/400",
     imagensExtras: [
       "https://picsum.photos/id/264/200/300",
@@ -98,13 +99,13 @@ const filmes = [
   
 ];
 
-// ✅ Definindo o filme de destaque (último da lista)
+
 const filmeDestaque = filmes[filmes.length - 1];
 
 if (document.getElementById("lista-filmes")) {
   const container = document.getElementById("lista-filmes");
 
-  // Garante que o destaque esteja por último
+
   const filmesOrdenados = filmes.filter(f => f.id !== filmeDestaque.id);
   filmesOrdenados.push(filmeDestaque);
 
@@ -128,7 +129,7 @@ if (document.getElementById("lista-filmes")) {
   });
 }
 
-// ✅ Renderiza o destaque na Home
+
 if (document.getElementById("filme-destaque")) {
   const destaque = filmeDestaque;
 
@@ -140,7 +141,7 @@ if (document.getElementById("filme-destaque")) {
   `;
 }
 
-// ✅ Renderiza o carrossel de destaques
+
 if (document.getElementById("carousel-itens")) {
   const carouselContainer = document.getElementById("carousel-itens");
 
@@ -161,7 +162,7 @@ if (document.getElementById("carousel-itens")) {
   });
 }
 
-// ✅ Renderiza página de detalhes
+
 if (window.location.pathname.includes("detalhes.html")) {
   const params = new URLSearchParams(window.location.search);
   const id = parseInt(params.get("id"));
